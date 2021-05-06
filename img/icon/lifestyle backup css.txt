@@ -1,0 +1,415 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    justify-content: space-between;
+    background-image: linear-gradient(rgb(223, 223, 255),rgba(0,0,0,7)), url(/img/architecture-bar-buildings-city-219095.jpg);
+    background-size: cover;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.logo{
+    visibility: visible;
+    margin-top: 17px;
+    margin-left: 7px;
+}
+.navbar
+{
+    padding-top: 0px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+.logo
+{
+    visibility: initial;
+    width:  80px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    position: sticky;
+    height: 80px;
+}
+.menu-logo
+{
+    width: 30px;
+    cursor: pointer;
+    border: 1px solid red;
+    margin-left: 40px;
+
+}
+.quicklinks{
+    flex: 1;
+    margin-left: 5px;
+
+}
+nav ul li{
+    margin-left: 0px;
+    margin-top: 15px;
+    font-size: 6px;
+    margin-right: 8px;
+}
+nav ul li a{
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+.row{
+    color: white;
+}
+.row .clickas{
+    
+    width: 80px;
+    color: tomato;
+}
+.select
+{
+    flex-basis: 50%;
+}
+h1{
+    color: white;
+    position: relative;
+    font-size: 50px;
+    margin: 0 0;
+    padding: 0 0;
+}
+.container p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 35px;
+    margin: 0 0;
+    padding: 0 0;
+}
+.picaso
+{
+    margin-top: 35px;
+}
+.picaso p{
+    font-size: 1rem;
+}
+.picaso h1{
+    background-color: teal;
+    font-size: 2rem;
+    width: 0;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+}
+.pic{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: transform 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+.pic:hover{
+    transform: translateY(-20px);
+    transform: rotateY(-43deg);
+    transform: rotateY(43deg);
+}
+h5{
+    color: white;
+    text-shadow: 0 0 5px #999;
+}
+.pic p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+.musiclink{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.music
+{
+    background-color: tomato;
+    font-size: inherit;
+}
+.music p{
+    font-size: inherit;
+    margin-left: 0px;
+}
+.EATS {
+    background-color: rgb(207, 195, 195);
+    font-size: 20px;
+}
+.EATS img
+{
+    width: 35%;
+}
+.Fashion
+{
+    background-color: lightskyblue;
+    position: relative;
+    text-align: center;
+}
+.Fashion img
+{
+    width: 55%;
+    display: inline-block;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+.Movies
+{
+    background-color: limegreen;
+}
+.Movies img 
+{
+    width: 35%;
+}
+
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+@media screen and (max-width:1280px){
+        *{
+            width: 100%;
+    }
+    .navbar{
+        visibility: hidden;
+    }
+
+}
+@media screen and (max-width:768px){
+
+    html{
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .pic
+    {
+        display: none;
+    }
+    .picaso
+    {
+        padding: 0 0;
+        transform: translateY(-80px);
+
+    }
+    .picaso h1{
+        font-size: 2rem;
+        padding: 0 0;
+        margin: 0 0; 
+    }
+    .picaso p{
+        font-size: 1.2rem;
+        width: 450px;
+        padding: 0 0;
+    }
+    .musiclink p
+    {
+        width: auto;
+        font-size: 1rem;
+        text-decoration:none;
+    }
+    .musiclink
+    {
+        width:90%;
+        padding: 0 0;
+        margin: 0 0;
+    }
+}
+@media screen and (max-width:411px){
+
+    html{
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .navbar p{
+        color: #fff;
+        visibility: visible;
+        padding-left:200px;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    .logo{
+        visibility: visible;
+        height: auto;
+        margin-left: 4px;
+        margin-top: 4px;
+        margin-bottom: 25px;
+    }
+    .clickas
+    {
+        background-color: #fff;
+        width: 10px;
+        font-size: 12px;
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+    .clickas nav ul li{
+        font-size: 20px;
+        margin-left: 14px;
+    }
+    .pic
+    {
+        display: none;
+    }
+    .picaso
+    {
+        padding: 0 0;
+        transform: translateY(-80px);
+
+    }
+    .picaso h1{
+        font-size: 2rem;
+        padding: 0 0;
+        margin: 0 0; 
+    }
+    .picaso p{
+        font-size: 0.8rem;
+        width: 410px;
+    }
+    .picaso h2{
+        margin-top: 25px;
+        padding-left: 20px;
+        color: #fff;
+        font-size: 18px;
+    }
+    .musiclink p
+    {
+        width: 410px;
+        font-size: 12px;
+        text-decoration:none;
+        margin: 0 0;
+    }
+    .music img{
+        width: 410px;
+    }
+    .music video{
+        width: 408px;
+    }
+    .musiclink
+    {
+        padding: 0 0;
+        margin: 0 0;
+    }
+    .EATS p {
+        font-size: 12px;
+    }
+    .EATS .pic {
+        width: 408px;
+    }
+    .EATS h2{
+        font-size: 1.2rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .EATS p{
+        font-size: 15px;
+        margin: 0 0;
+        padding-bottom: 10px;
+    }
+    .EATS img{
+        width: 410px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width:375px){
+
+    html{
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .logo{
+        visibility: visible;
+        height: auto;
+        margin-left: 4px;
+        margin-top: 44px;
+    }
+    .clickas
+    {
+        background-color: #fff;
+        width: 10px;
+        font-size: 12px;
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+    .clickas nav ul li{
+        font-size: 20px;
+        margin-left: 14px;
+    }
+    .pic
+    {
+        display: none;
+    }
+    .picaso
+    {
+        padding: 0 0;
+        transform: translateY(-80px);
+
+    }
+    .picaso h1{
+        font-size: 2rem;
+        padding: 0 0;
+        margin: 0 0; 
+    }
+    .picaso p{
+        font-size: 0.8rem;
+        width: 350px;
+    }
+    .picaso h2{
+        margin-top: 25px;
+        padding-left: 20px;
+        color: #fff;
+        font-size: 18px;
+    }
+    .musiclink p
+    {
+        width: auto;
+        font-size: 12px;
+        text-decoration:none;
+        margin: 0 0;
+    }
+    .music img{
+        width: 374px;
+    }
+    .music video{
+        width: inherit;
+    }
+    .musiclink
+    {
+        width:90%;
+        padding: 0 0;
+        margin: 0 0;
+    }
+    .EATS p {
+        font-size: 12px;
+    }
+    .EATS .pic {
+        width: 370px;
+    }
+    .EATS h2{
+        font-size: 1rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .EATS p{
+        font-size: 12px;
+        margin: 0 0;
+        padding-bottom: 10px;
+    }
+    .EATS img{
+        width: 374px;
+        padding-bottom: 10px;
+    }
+}

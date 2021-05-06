@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/index.html"><img src="/img/p.png"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Connect.html">Events</a></li>
+                </ul>
+            </nav>
+            <section>
+                <div class="container">
+                    <h1>#2 Fresh music from chicago artist</h1>
+                      <div class="row">
+                        <div class="video-player" id="videoplayer">
+                            <video width="100%" controls autoplay id="myvideo">
+                                <source src="vid/Kanye West - Closed On Sunday (Official Video).mp4" type="video/mp4">
+                                    <img src="img/musicicon/close.png" alt="close" class="close-video" onclick="stopVideo()">
+                            </video>
+                        </div>
+                          <div class="col">
+                              <div class="small-img-row">
+                                  <div class="small-img">
+                                    <img src="img/musicicon/kanye(a).jpg" alt="ye">
+                                    <img src="img/musicicon/play.png" class="play-video" onclick="playVideo('vid/Kanye West - Closed On Sunday (Official Video).mp4')">
+                                    <img src="img/musicicon/close.png"width="20px" alt="close" class="close-video" onclick="stopVideo()">
+                                  </div>
+                                  <p>Closed on sunday<br>Kanye west</p>
+                              </div>
+                              <div class="small-img-row">
+                                <div class="small-img">
+                                  <img src="img/musicicon/lil-durk(a).jpg" alt="durk">
+                                  <img src="img/musicicon/play.png" class="play-video" onclick="playVideo('vid/Lil Durk - When We Shoot (Official Music Video).mp4')">
+                                  <img src="img/musicicon/close.png"width="20px" alt="close" class="close-video" onclick="stopVideo()">
+                                </div>
+                                <p>When We Shoot<br>Lil Durk</p>
+                            </div>
+                            <div class="small-img-row">
+                                <div class="small-img">
+                                  <img src="img/musicicon/juicy(a).png" alt="j-wrld">
+                                  <img src="img/musicicon/play.png" class="play-video" onclick="playVideo('vid/Montana Of 300 - Middle Child (Remix) (Official Video).mp4')">
+                                  <img src="img/musicicon/close.png" width="20px"alt="close" class="close-video" onclick="stopVideo()">
+                                </div>
+                                <p>Middle Child (Remix)<br>Montana 300</p>
+                            </div>
+                            <div class="small-img-row">
+                                <div class="small-img">
+                                  <img src="img/musicicon/kingvon(a).jpg" alt="von">
+                                  <img src="img/musicicon/play.png" class="play-video" onclick="playVideo('vid/King Von Ft Lil Durk - All These Ngas (Music Video).mp4')">
+                                  <img src="img/musicicon/close.png"width="20px" alt="close" class="close-video" onclick="stopVideo()">
+                                </div>
+                                <p>All These Ngas<br>King von ft Lil Durk</p>
+                            </div>
+                          </div>
+                      </div>
+                </div>  
+                        <script>
+                            var musicplayer = document.getElementById("musicplayer");
+                            var myaudio = document.getElementById("myaudio");
+    
+                            function stopAudio(){
+                                myaudio.src = '';
+                            }
+    
+                            function playAudio(file){
+                                myaudio.src  = file;
+                            musicplayer.style.display = "none";                        
+                        }
+    
+                            var videoplayer = document.getElementById("videoplayer");
+                            var myvideo = document.getElementById("myvideo");
+    
+                            function stopVideo(){
+                                myvideo.src = '';
+    
+                            }
+    
+                            function playVideo(file){
+                                myvideo.src  = file;
+                            videoplayer.style.display = "block";                        
+                        }
+                        </script>
+                    </div>
+                </section>
+    </div>
+</body>
+</html>

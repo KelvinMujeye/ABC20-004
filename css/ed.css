@@ -1,0 +1,47 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+section .vid1{
+    border: 2px solid black;
+    width: 50%;
+    margin-left: 48%;
+}
+section .vid video{
+    height: auto;
+    width: 400px;
+    position: relative;
+    margin: 0 15px;
+}
+section .vid{
+    border: 2px solid black;
+    width: 50%;
+    margin-right: 48%;
+}
+section .vid1 video{
+    height: auto;
+    margin: 15px;
+    width: 400px;
+}
+section .vid2{
+    border: 2px solid black;
+    width: 50%;
+    margin-right: 48%;
+}
+section .vid2 video{
+    height: auto;
+    margin: 15px;
+    width: 400px;
+}
+section .vid3{
+    border: 2px solid black;
+    width: 50%;
+    margin-left: 48%;
+}
+section .vid3 video{
+    height: auto;
+    margin: 15px;
+    width: 400px;
+
+}

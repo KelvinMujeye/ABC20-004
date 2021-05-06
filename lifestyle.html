@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/life.css">
+    <title>Lifestyle</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="nav">
+            <img src="/img/Untitled-1@2x.png" class="logo">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Connect.html">Connect</a></li>
+                    <li><a href="/index.html"><p>Homepage</p></a></li>
+                </ul>
+        </div>
+        <div class="content">
+            <h2>5 Reasons why people visit Chicago</h2>
+            <p>Why visit Chicago you ask? Does it have architecture and history? Art and culture?
+                Does it have beer? Well, all of the above as it turns out, and much more.</p>
+        </div>
+    </div>
+    <section>
+    <div id="music" class="musiccon">
+        <h1>#1:The hottest music in the state</h1>
+        <h4>Music is the heartbeat of our city, whether you’re at a late-night club or a summer music festival. Come experience the unforgettable energy of Chicago’s music scene.</h4>
+        <div class="musiccol">
+            <div class="smallimgrow">
+                <div class="musicsmallimg">
+                    <img class="playicont" src="img/musicicon/poloG.jpg" width="120px" alt="polo">
+                    <img src="img/icon/play.png" width="20px" class="play-btn" onclick="playAudio('mp3/POLOG-RAPSTAR.mp3')">
+                    <img src="img/icon/close.png" width="20px" onclick="stopAudio()">
+                </div>
+                <p>Polo G</br>RAPSTAR</p>
+            </div>
+            <p>
+                
+            </p>
+            <div class="musiccol">
+                <div class="smallimgrow">
+                    <div class="musicsmallimg">
+                        <img class="playicon" src="img/musicicon/juicy(a).png" alt="juicy_world">
+                        <img src="img/icon/play.png" width="20px" class="play-btn" onclick="playAudio('mp3/JuiceWRLD-Righteous.mp3')">
+                        <img src="img/icon/close.png" width="20px" onclick="stopAudio()">
+                    </div>
+                    <p>Juicy_wrld</br>Righteous</p>
+                </div>
+                <p>
+                
+                </p>
+                <div class="smallimgrow">
+                    <div class="musicsmallimg">
+                        <img class="playicon" src="img/musicicon/lil-durk(a).jpg" alt="lil_durk">
+                        <img src="img/icon/play.png" width="20px" class="play-btn"  onclick="playAudio('mp3/Lil Durk-3 HeadedGoat.mp3')">
+                        <img src="img/icon/close.png" width="20px" onclick="stopAudio()">
+                    </div>
+                    <p>Lil Durk</br>3 HeadedGoat</p>
+                </div>
+                <p>
+                
+                </p>
+                <div class="smallimgrow">
+                    <div class="musicsmallimg">
+                        <img class="playicont" src="img/musicicon/kingvon(a).jpg" alt="king_von">
+                        <img src="img/icon/play.png" width="20px" class="play-btn" onclick="playAudio('mp3/kingvon.mp3')">
+                        <img src="img/icon/close.png" width="20px" onclick="stopAudio()">
+                    </div>
+                    <p>kingvon</br>3 A.M</p>
+                </div>
+                <p>
+                    1
+                </p>
+            </div>
+        </div>
+        <div class="musicplayer" id="musicplayer">
+            <audio controls autoplay id="myaudio">
+                <source src="mp3/" type="audio/mp3">
+                    <img src="img/icon/close.png" class="close-btn" onclick="stopAudio()">
+            </audio>
+        </div>
+        <aside><P><a href="#Top">Back to top</a></P></aside>
+        </div>
+    </section>
+    <h2 style="color: white;">Some tourist attraction sites(click to enlarge picture)</h2>
+<div class="row">
+    <div class="column">
+      <img src="img/park.jpg" alt="Millennium Park" onclick="myFunction(this);">
+      <p>Three square blocks of open lakefront complete with a Ferris Wheel, outdoor music pavillion and ice skating rink; expected to become one of the city's most popular sites.</p>
+    </div>
+    <div class="column">
+      <img src="img/gangstar.jpg" alt="gangsters" onclick="myFunction(this);">
+      <p>Combine a Chicago history lesson with supernatural tales for an ideal activity for adults and kids. Go back in time on the Gangsters and Ghosts tour to hear about Chicago in the roaring 1920’s when speakeasies around The Loop attracted notorious bootleggers and gangsters including Al Capone. See former gangster hangouts and haunted places like Congress Hotel, Palmer House, and Death Alley, with lively commentary from your historian guide.
+    </p>
+    </div>
+    <div class="column">
+      <img src="img/lincolnparkape.jpg" alt="linclonpark" onclick="myFunction(this);">
+      <p>Established in 1868, this 35-acre, beautifully landscaped zoo is one of America's last free-admission zoos. The Great Ape House has one of the best assemblages of gorillas and chimpanzees in the world.</p>
+    </div>
+    <div class="column">
+      <img src="img/art-insti.jpg" alt="ArtInstitution" onclick="myFunction(this);">
+      <p>See why the Art Institute of Chicago is the only museum in the world to be top-ranked by TripAdvisor four years in a row! Experience the greatest Impressionist collection outside Paris, and view contemporary masterpieces in the spectacular Modern Wing. Stand before classics like Nighthawks, and travel the globe through galleries devoted to the art of ancient Greece, Japan, Africa, and the Americas.
+    </p>
+    </div>
+    <div class="column">
+        <img src="img/Wringley-field.jpg" alt="Wringley" onclick="myFunction(this);">
+        <p>Get a behind-the-scenes look at the legendary home of the Chicago Cubs with Wrigley Field Tours. Built in 1914, this must-see Chicago attraction houses more than 100 years of history. New this year, fans can join us on a non-gameday Ivy Tour which includes the opportunity to take a photo in front of Wrigley Field’s historic ivy wall.</p>
+    </div>
+    <div class="column">
+        <img src="img/sci.jpg" alt="Sciencemuseum" onclick="myFunction(this);">
+        <p>The largest science museum in the Western Hemisphere! Housed in the only remaining building from the 1893 World’s Fair, MSI is a Chicago must-see. You’ll experience 14 acres of hands-on exhibits and have the chance to stand before a 40-foot tornado; climb aboard a World War II German submarine; take a run in a human-sized hamster wheel; descend into an Illinois coal mine; tour a fully functioning eco-friendly home; board a 727 hanging from the ceiling; transmit your pulse to a 13-foot, 3-D beating heart; and much more! MSI is not a place where you walk around quietly and observe. No way! You get involved in the fun—and learn—by doing. Just a few miles from downtown with convenient underground parking.
+        </p>
+    </div>
+  </div>
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+    </script>
+<section>
+    <!---- eats --->
+    <div id="food" class="EATS">
+        <div class="eatslink">
+            <h2>Food in Chicago</h2>
+            <p>We knew that the food would be good, but we were still blown away by the food quality at all price points.</br>
+                We’ve already written about some of our excellent restaurant meals, but we also loved accessible local food like Chi dogs, 
+                popcorn and donuts.</br>Even the local outpost of Eataly has its own twist, not to mention an enviable selection of fresh produce. Seriously, eating is one of the best things to do in Chicago. It is one of the best food cities in America after all.</p>
+            <img src="img/coffe.jpg">
+            <p>for generous, well-constructed pour overs and friendly service. Why mess with perfection?</p>
+            <img src="">
+            <img src="">
+            <img src="">
+        </div>
+        <P><a href="#Top">Back to top</a></P>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background: url(/img/Chicagobull.jpg);
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+    margin-bottom: 45px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.nav
+{
+    height: 100px;
+    align-items: center;
+    flex: 1;
+    margin-top: 25px;
+}
+.nav ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: turquoise;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+.nav ul li:hover::after
+{
+    width: 100%;
+}
+.leftbox{
+    width: 450px;
+    margin:0px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.leftbox .content
+{
+    color: #fff;
+    background: rgba(0, 0, 0, 5);
+    padding: 30px;
+    transition: 0.4s;
+}
+
+nav ul{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top:0 ;
+}
+.leftbox .content:hover
+{
+    background: crimson;
+}
+
+.leftbox .content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.leftbox .content p{
+    margin: 5px 0 0;
+    padding: 0;
+}
+.nav .events
+{
+    position: relative;
+    width: fit-content;
+    height: 100%;
+    box-sizing: border-box;
+}
+.logo{
+    margin-top: 0;  
+    margin-bottom: 0;
+}
+.nav .logo img{
+    float: left;
+    margin-left: 10px;
+    width: 60px;
+}
+.nav .events ul li{
+    margin-bottom: 10px;
+}
+.leftbox{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: auto; 
+    position: relative;
+}
+.events ul{
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    padding: 0px;
+    transform: translateY(-5%);
+    box-sizing: border-box;
+    width: 65%;
+}
+.events ul li{
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.events ul li .time
+{
+    position: relative;
+    padding: 10px;
+    background: teal;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .4s;
+}
+.events ul li:hover .time{
+background-color: crimson;
+}
+
+.events ul li .time h2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 30px;
+}
+.details h3{
+    padding: 0px;
+    font-weight: 700;
+    color: rgb(37, 32, 32);
+    position: relative;
+    text-align:left;
+    margin: 0px;
+}
+.details p{
+    padding: 0px;
+    text-align:left;
+    color: white;
+    position: relative;
+    margin-bottom: 10px;
+}
+.events ul li .details
+{
+    padding: 20px;
+    background: rgb(214, 87, 87);
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+.events ul li .details a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 1px solid rgb(158, 54, 54);
+    margin-top: 15px;
+    font-size: 12px;
+    transition: .25s;
+}
+.events ul li .details a:hover
+{
+    background-color:crimson;
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width:768px)
+{
+    html{
+        width: 100%;
+    }
+    .events ul li .details
+    {
+    padding: 20px;
+    background: rgb(214, 87, 87);
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+    }
+    .nav .logo nav ul{
+        display: flex;
+        flex: 1;
+        transform: translate(240px);
+    }
+    .nav .events ul li{
+        width: 550px;
+    }
+    
+}
+@media screen and (max-width:375px)
+{
+    html{
+        width: 100%;
+    }
+    .nav .events ul li{
+        width: max-content;
+        margin: 10px, 0;
+        padding: 0;
+    }
+    .nav .logo nav ul{
+        display: flex;
+        flex: 1;
+        transform: translate(0px);
+    }
+}
+@media screen and (max-width:411px)
+{
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav .logo nav ul{
+        display: flex;
+        font-size: 11px;
+        padding-right: 0;
+        width: auto;
+    }
+    .nav .logo ul li{
+        padding: 0;
+        margin: 8px;
+    }
+    .events ul li
+    {
+        width: max-content;
+    }
+    .events ul li .time
+    {
+        width: 80px;
+    }
+    .events ul li .time h2{
+        font-size: 18px;
+    }
+    .events ul li .details
+    {
+        width: 300px;
+    }
+}
