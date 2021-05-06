@@ -118,7 +118,11 @@ a{
     padding-left: 25px;
     padding-right: 25px;
 }
-
+footer{
+    width:100%;
+    height:fit-content;
+    text-align: center;
+  }
 @media screen and (max-width: 1024px){
     .body{
         display:inline-block ;

@@ -35,11 +35,6 @@ article p{
     margin-right: 10px;
 
 }
-img
-{
-    width: auto;
-    height: auto;
-}
 .hearder
 {
     width: 100%;
@@ -81,7 +76,11 @@ a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-
+footer{
+    width:100%;
+    height:fit-content;
+    text-align: center;
+  }
 @media screen and (max-width:411px)
 {
     html{
@@ -99,6 +98,7 @@ a{
     html{
         margin: 0;
         padding: 0;
+        width: 100%;
     }
     .attractions p{
         font-size: inherit;

@@ -5,34 +5,32 @@
 }
 html
 {
-    background-color: #c5c9ca;
+    background-color: #dbcbc6;
     scroll-behavior: smooth;
 }
 p{
-    color: white;
+    color: rgb(0, 0, 0);
+}
+.nav
+{
+    width: 100%;
+    background-color: rgb(148, 148, 148);
 }
 .banner
 {
     width: 100%;
     height: 100vh;
-    
     background-size: cover;
     background-position: center;
 }
 .nav{
-    width: 85%;
-    margin: auto;
-    align-items: center;
-    padding: 20px 0;
+    margin: 0;
+    padding-top:10px;
+    text-align: center;
     display: flex;
     justify-content: space-between;
 }
-.logo
-{
-    width: 60px;
-    cursor: pointer;
-    transform: translateX(-60px);
-}
+
 .nav ul li {
     list-style: none;
     display: inline-block;
@@ -42,7 +40,7 @@ p{
 }
 .nav ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
 }
 .nav ul li::after
@@ -62,16 +60,15 @@ p{
 }
 .content
 {
-    width: 50%;
     position: absolute;
     top: 50%;
-    text-align:justify ;
     color: white;
     transform: translateY(-50%);
 }
 .content h2{
     font-size: 40px;
-    text-align: left;
+    color: black;
+    text-align: center;
     line-height: 35px;
     margin-bottom: 20px;
 }
@@ -85,7 +82,7 @@ p{
     border-radius: 25px;
     margin: 0px 0px;
     background: tomato;
-    color:white;
+    color:rgb(0, 0, 0);
     font-weight: 400;
 }
 .banner .nav ul li a p:hover
@@ -104,11 +101,11 @@ section
 }
 section:nth-child(1)
 {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 section:nth-child(2)
 {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 .musiccon
 {
@@ -128,7 +125,7 @@ flex-basis: 50%;
 min-width: 250px;
 }
 article p{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .featuredmusic
 {
@@ -198,7 +195,7 @@ audio:focus{
 }
 .container h1{
     padding: 60px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 40px;
 }
@@ -280,7 +277,7 @@ audio:focus{
     position: absolute;
     bottom: 15px;
     left: 15px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
   }
 .eatslink img
@@ -291,10 +288,16 @@ audio:focus{
     position: absolute;
     top: 10px;
     right: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 35px;
     cursor: pointer;
   }
+  footer{
+    width:100%;
+    height:fit-content;
+    text-align: center;
+  }
+
   @media screen and (max-width:768px)
   {
       html{

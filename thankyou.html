@@ -1,96 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank you</title>
-</head>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="">
 <body>
-    <div class="navbar">
-        <a href="/index.html"><img src="/img/p.png"></a></div>
-            <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="lifestyle.html">Lifestyle</a></li>
-                    <li><a href="Events.html">Events</a></li>
-                    <li><a href="Connect.html">Events</a></li>
-                </ul>
-            </nav>
-            <section>
-                <div class="container">
-                    <h1>#2 Fresh music from chicago artist</h1>
-                      <div class="row">
-                        <div class="video-player" id="videoplayer">
-                            <video width="100%" controls autoplay id="myvideo">
-                                <source src="vid/Kanye West - Closed On Sunday (Official Video).mp4" type="video/mp4">
-                                    <img src="img/musicicon/close.png" alt="close" class="close-video" onclick="stopVideo()">
-                            </video>
-                        </div>
-                          <div class="col">
-                              <div class="small-img-row">
-                                  <div class="small-img">
-                                    <img src="img/musicicon/kanye(a).jpg" alt="ye">
-                                    <img src="img/musicicon/play.png" class="play-video" onclick="playVideo('vid/Kanye West - Closed On Sunday (Official Video).mp4')">
-                                    <img src="img/musicicon/close.png"width="20px" alt="close" class="close-video" onclick="stopVideo()">
-                                  </div>
-                                  <p>Closed on sunday<br>Kanye west</p>
-                              </div>
-                              <div class="small-img-row">
-                                <div class="small-img">
-                                  <img src="img/musicicon/lil-durk(a).jpg" alt="durk">
-                                  <img src="img/musicicon/play.png" class="play-video" onclick="playVideo('vid/Lil Durk - When We Shoot (Official Music Video).mp4')">
-                                  <img src="img/musicicon/close.png"width="20px" alt="close" class="close-video" onclick="stopVideo()">
-                                </div>
-                                <p>When We Shoot<br>Lil Durk</p>
-                            </div>
-                            <div class="small-img-row">
-                                <div class="small-img">
-                                  <img src="img/musicicon/juicy(a).png" alt="j-wrld">
-                                  <img src="img/musicicon/play.png" class="play-video" onclick="playVideo('vid/Montana Of 300 - Middle Child (Remix) (Official Video).mp4')">
-                                  <img src="img/musicicon/close.png" width="20px"alt="close" class="close-video" onclick="stopVideo()">
-                                </div>
-                                <p>Middle Child (Remix)<br>Montana 300</p>
-                            </div>
-                            <div class="small-img-row">
-                                <div class="small-img">
-                                  <img src="img/musicicon/kingvon(a).jpg" alt="von">
-                                  <img src="img/musicicon/play.png" class="play-video" onclick="playVideo('vid/King Von Ft Lil Durk - All These Ngas (Music Video).mp4')">
-                                  <img src="img/musicicon/close.png"width="20px" alt="close" class="close-video" onclick="stopVideo()">
-                                </div>
-                                <p>All These Ngas<br>King von ft Lil Durk</p>
-                            </div>
-                          </div>
-                      </div>
-                </div>  
-                        <script>
-                            var musicplayer = document.getElementById("musicplayer");
-                            var myaudio = document.getElementById("myaudio");
-    
-                            function stopAudio(){
-                                myaudio.src = '';
-                            }
-    
-                            function playAudio(file){
-                                myaudio.src  = file;
-                            musicplayer.style.display = "none";                        
-                        }
-    
-                            var videoplayer = document.getElementById("videoplayer");
-                            var myvideo = document.getElementById("myvideo");
-    
-                            function stopVideo(){
-                                myvideo.src = '';
-    
-                            }
-    
-                            function playVideo(file){
-                                myvideo.src  = file;
-                            videoplayer.style.display = "block";                        
-                        }
-                        </script>
-                    </div>
-                </section>
-    </div>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#band" class="w3-button w3-bar-item">Band</a>
+  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="img/musicicon/static.politico1.jpg"
+  style="width:100%">
+  <img class="mySlides" src="img/musicicon/static.politico1.jpg"
+  style="width:100%">
+  <img class="mySlides" src="img/musicicon/static.politico1.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">THE BAND</h2>
+  <p class="w3-opacity"><i>We love music</i></p>
+  <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>John</p>
+    <img src="img/musicicon/static.politico1.jpg" alt="Random Name" style="width:100%">
+    <p>John is the smartest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Paul</p>
+    <img src="img/musicicon/static.politico1.jpg" alt="Random Name" style="width:100%">
+    <p>Paul is the prettiest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Ringo</p>
+    <img src="img/musicicon/static.politico1.jpg" alt="Random Name" style="width:100%">
+    <p>Ringo is the funniest.</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+<footer>
+  <ul>
+  <p><li><a href="www.facebook.com/mckruga"><img src="img/fb.svg" width="50px"></a>
+      <a href="www.instagram.com/mckruga"><img src="img/insta.svg" width="50px"></a>
+      <a href="www.twitter.com/mckruga"><img src="img/twitter.svg" width="50px"></a></li>subscribe for more updates on Chicago, USA. <br>
+  ©2021 Chicago City, Rights reserved by Kelvin Mujeye</p>
+</ul>
+ </footer>
 </body>
 </html>
+

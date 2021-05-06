@@ -7,7 +7,7 @@ body{
     padding: 0;
     height: 100vh;
     width: 100%;
-    background: url(/img/Chicagobull.jpg);
+    background-color: #c5c9ca;
     background-size: cover;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -20,7 +20,7 @@ body{
 }
 .nav ul li a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
 }
 .nav
@@ -29,6 +29,10 @@ body{
     align-items: center;
     flex: 1;
     margin-top: 25px;
+}
+.nav h1
+{
+    text-align: center;
 }
 .nav ul li::after
 {
@@ -45,149 +49,39 @@ body{
 {
     width: 100%;
 }
-.leftbox{
-    width: 450px;
-    margin:0px;
-    position: relative;
-    box-sizing: border-box;
-}
-
-.leftbox .content
-{
-    color: #fff;
-    background: rgba(0, 0, 0, 5);
-    padding: 30px;
-    transition: 0.4s;
-}
-
-nav ul{
-    display: flex;
-    margin-bottom: 20px;
-    margin-top:0 ;
-}
-.leftbox .content:hover
-{
-    background: crimson;
-}
-
-.leftbox .content h1{
-    margin: 0;
-    padding: 0;
-    font-size: 50px;
-    text-transform: uppercase;
-}
-.leftbox .content p{
-    margin: 5px 0 0;
-    padding: 0;
-}
-.nav .events
-{
-    position: relative;
-    width: fit-content;
-    height: 100%;
-    box-sizing: border-box;
-}
-.logo{
-    margin-top: 0;  
-    margin-bottom: 0;
-}
-.nav .logo img{
-    float: left;
-    margin-left: 10px;
+.logo img{
     width: 60px;
 }
-.nav .events ul li{
-    margin-bottom: 10px;
-}
-.leftbox{
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    width: auto; 
-    position: relative;
-}
-.events ul{
-    position: absolute;
-    top: 50%;
-    margin: 0;
-    padding: 0px;
-    transform: translateY(-5%);
-    box-sizing: border-box;
-    width: 65%;
-}
-.events ul li{
-    list-style: none;
-    background: #fff;
-    box-sizing: border-box;
-    height: 200px;
-}
-
-.events ul li .time
+.nav .logo nav 
 {
-    position: relative;
-    padding: 10px;
-    background: teal;
-    box-sizing: border-box;
-    width: 30%;
-    height: 100%;
-    float: left;
+    display: flex;
+    float: right;
+}
+.wrapper table tbody tr th
+{
+    border: 2px solid black;
+    background-color: gold;
+}
+.wrapper table tbody tr th:hover
+{
+    background-color: deeppink;
+    color:  White;
+}
+.wrapper table tbody tr td
+{
+    border: 2px solid black;
+    background-color: gold;
+}
+.wrapper table tbody tr td:hover
+{
+    background-color: deepskyblue;
+    color: rgb(0, 0, 0);
+}
+footer{
+    width:100%;
+    height:fit-content;
     text-align: center;
-    transition: .4s;
-}
-.events ul li:hover .time{
-background-color: crimson;
-}
-
-.events ul li .time h2{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    font-size: 30px;
-}
-.details h3{
-    padding: 0px;
-    font-weight: 700;
-    color: rgb(37, 32, 32);
-    position: relative;
-    text-align:left;
-    margin: 0px;
-}
-.details p{
-    padding: 0px;
-    text-align:left;
-    color: white;
-    position: relative;
-    margin-bottom: 10px;
-}
-.events ul li .details
-{
-    padding: 20px;
-    background: rgb(214, 87, 87);
-    box-sizing: border-box;
-    width: 70%;
-    height: 100%;
-    float: left;
-}
-.events ul li .details a{
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    border: 1px solid rgb(158, 54, 54);
-    margin-top: 15px;
-    font-size: 12px;
-    transition: .25s;
-}
-.events ul li .details a:hover
-{
-    background-color:crimson;
-    color: rgb(255, 255, 255);
-}
+  }
 @media screen and (max-width:768px)
 {
     html{
@@ -200,7 +94,6 @@ background-color: crimson;
     box-sizing: border-box;
     width: 70%;
     height: 100%;
-    float: left;
     }
     .nav .logo nav ul{
         display: flex;
