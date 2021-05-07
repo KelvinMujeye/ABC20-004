@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/life.css">
-    <title>Lifestyle</title>
+    <link rel="stylesheet" href="life.css">
+    <title>Chicago | Lifestyle</title>
 </head>
 <body>
+  <!-----Top Page------->
     <div class="banner">
         <div class="nav">
-            <img src="/img/Untitled-1@2x.png" style="width: 60px;">
+            <img src="/img/Untitled-1@2x.png"alt="logo" style="width: 60px;">
                 <ul>
                     <li><a href="about.html">About</a></li>
                     <li><a href="lifestyle.html">Lifestyle</a></li>
@@ -18,65 +19,151 @@
                     <li><a href="Connect.html">Connect</a></li>
                     <li><a href="/index.html"><p>Homepage</p></a></li>
                 </ul>
-        </div>
-        <div class="content">
-            <img src="img/heavengate.jpg" style="width: 450px;">
-            <h2>Reasons why people visit Chicago</h2>
-            <p>Why visit Chicago you ask? Does it have architecture and history? Art and culture?
-                Does it have beer? Well, all of the above as it turns out, and much more.</p>
-        </div>
+      </div>
+      <h2>Chicago, Illinois</h2>
+        <p>Why visit Chicago you ask? Does it have architecture and history? Art and culture?
+          Does it have beer? Well, all of the above as it turns out, and much more.</br>It may be called the “Second City,” but Chicago plays second-fiddle to none.
+           With stunning architecture, 40 world-class museums, over 200 theaters and more than 200 independent art galleries, 
+          and over 7000 restaurants serving award-winning food, Chicago is a great place to visit for a weekend of culture, cuisine and history any time of year.
+          But at no time does Chicago shine brighter than during the summer months. The Windy City is one of the most beautiful places to visit from June through
+          September, when locals shake off the winter blues and take advantage of every last drop of summer sun. From eclectic street festivals to picnics in the park,
+          running along the Lakefront and hitting the beach, there’s so much to do in Chicago during the summer. Here are nine reasons why you should add a visit to Chicago to your summer plans.</p>
+      <div class="content">
+        <section>
+        <img class="slide" src="img/beaches-511-chicago.jpg" alt="beach" style="width:100%">
+        <img class="slide" src="img/el-chicago-511.jpg" style="width:100%" alt="elchicago">
+        <img class="slide" src="img/MCA.Exterior.5.SM_-1024x479.jpg"alt="mca" style="width:100%">
+          </div>
+    </section>
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4500);
+      }
+      </script>
     </div>
-    <section style="border-bottom: 2px solid white;"></section>
-    <h2 style="color: rgb(0, 0, 0); font-size: 15px;">Some tourist attraction sites(click to enlarge picture check below)</h2>
-<div class="row">
-    <div class="column">
-      <img src="img/park.jpg" alt="Millennium Park" onclick="myFunction(this);">
-      <p>Three square blocks of open lakefront complete with a Ferris Wheel, outdoor music pavillion and ice skating rink; expected to become one of the city's most popular sites.</p>
-    </div>
-    <div class="column">
-      <img src="img/gangstar.jpg" alt="gangsters" onclick="myFunction(this);">
-      <p>Combine a Chicago history lesson with supernatural tales for an ideal activity for adults and kids. Go back in time on the Gangsters and Ghosts tour to hear about Chicago in the roaring 1920’s when speakeasies around The Loop attracted notorious bootleggers and gangsters including Al Capone. See former gangster hangouts and haunted places like Congress Hotel, Palmer House, and Death Alley, with lively commentary from your historian guide.
-    </p>
-    </div>
-    <div class="column">
-      <img src="img/lincolnparkape.jpg" alt="linclonpark" onclick="myFunction(this);">
-      <p>Established in 1868, this 35-acre, beautifully landscaped zoo is one of America's last free-admission zoos. The Great Ape House has one of the best assemblages of gorillas and chimpanzees in the world.</p>
-    </div>
-    <div class="column">
-      <img src="img/art-insti.jpg" alt="ArtInstitution" onclick="myFunction(this);">
-      <p>See why the Art Institute of Chicago is the only museum in the world to be top-ranked by TripAdvisor four years in a row! Experience the greatest Impressionist collection outside Paris, and view contemporary masterpieces in the spectacular Modern Wing. Stand before classics like Nighthawks, and travel the globe through galleries devoted to the art of ancient Greece, Japan, Africa, and the Americas.
-    </p>
-    </div>
-    <div class="column">
-        <img src="img/Wringley-field.jpg" alt="Wringley" onclick="myFunction(this);">
-        <p>Get a behind-the-scenes look at the legendary home of the Chicago Cubs with Wrigley Field Tours. Built in 1914, this must-see Chicago attraction houses more than 100 years of history. New this year, fans can join us on a non-gameday Ivy Tour which includes the opportunity to take a photo in front of Wrigley Field’s historic ivy wall.</p>
-    </div>
-    <div class="column">
-        <img src="img/sci.jpg" alt="Sciencemuseum" onclick="myFunction(this);">
-        <p>The largest science museum in the Western Hemisphere! Housed in the only remaining building from the 1893 World’s Fair, MSI is a Chicago must-see. You’ll experience 14 acres of hands-on exhibits and have the chance to stand before a 40-foot tornado; climb aboard a World War II German submarine; take a run in a human-sized hamster wheel; descend into an Illinois coal mine; tour a fully functioning eco-friendly home; board a 727 hanging from the ceiling; transmit your pulse to a 13-foot, 3-D beating heart; and much more! MSI is not a place where you walk around quietly and observe. No way! You get involved in the fun—and learn—by doing. Just a few miles from downtown with convenient underground parking.
-        </p>
-    </div>
-  </div>
+    <section style="border-bottom: 2px solid rgb(0, 0, 0);"></section>
+    <!-----Music Page------->
+    <h1 style="position: absolute;">Music</h1>
+    <section class="m-row">
+      <article class="m-third">
+        <img src="img/musicicon/ye.png" alt="yeezy" style="width:100%">
+        <p>Ye</p>
+        <p>Kanye.</p>
+        <section class="w3-container w3-center w3-content" style="max-width:800px">
+          <h2 class="w3-wide">Kanye West’s Chicago:</h2>
+          <p class="w3-opacity"><i> 25 formative locations around the city and suburbs</i></p>
+          <p class="w3-justify">West was born in Atlanta in 1977 and moved to Chicago shortly after his mother, Donda, and father, Ray, 
+            divorced in 1980. Kanye was 3 years old.
+            Here is a guide to Kanye West’s Chicago, from his South Shore childhood home to sites of notable performances.
+          </br>1.John H. Vanderpoel Elementary School</br>
+            2.Childhood home</br>
+            3.Chicago Academy for the Arts</br>
+            4.Rainbow Beach Park</br>
+            5.Blue Island home
+          </p>
+        </section>
+      </article>
+    </section>
+    <section class="m-row">
+      <article class="m-third">
+        <img src="img/musicicon/kingvonpic.jpg" alt="kingvonpic" style="width:100%">
+        <p>King</p>
+        <p>Von</p>
+        <section class="w3-container w3-center w3-content" style="max-width:800px">
+          <h2 class="w3-wide">Welcome to O’Block</h2>
+          <p class="w3-opacity"><i></i>||||</i></p>
+          <p class="w3-justify">The debut album from the uncompromising rapper was released one week before his untimely death. It delivers a concentrated dose of his tense, menacing take on drill.
+            Welcome to O’Block has been pitched as Von’s debut album after a series of mixtapes and his “origin story.” The tragedy that has followed its release means 
+            the project shoulders more of his legacy than Von could ever have intended.
+          </p>
+        </section>
+      </article>
+    </section>
+    <section class="m-row">
+      <article class="m-third">
+        <img src="img/musicicon/juice.jpg" alt="juicy" style="width:100%">
+        <p>Juicy</p>
+        <p>Wrld</p>
+        <section class="w3-container w3-center w3-content" style="max-width:800px">
+          <h2 class="w3-wide">Legends Never Die</h2>
+          <p class="w3-opacity"><i>We love music</i></p>
+          <p class="w3-justify">he Chicago artist’s first posthumous release doesn’t feel like a final goodbye, but instead a continued look inside his world. It’s bleak and beautiful.
+            At 21, Juice WRLD had begun to master the world around him. He could wed the sounds of influences like Billy Idol and Chief Keef and create something entirely different. 
+            As a songwriter, he could pair an airy melody with lyrics about heartbreak or drugs, and given the chance, fire off marathon freestyle sessions on a whim. A wunderkind with many imitators on SoundCloud, he sounded far more polished, far beyond whatever his closest peer was attempting to accomplish. 
+          </p>
+        </section>
+      </article>
+    </section>
   <div class="container">
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
     <img id="expandedImg" style="width:100%">
     <div id="imgtext"></div>
   </div>
-  <script>
-    function myFunction(imgs) {
-      var expandImg = document.getElementById("expandedImg");
-      var imgText = document.getElementById("imgtext");
-      expandImg.src = imgs.src;
-      imgText.innerHTML = imgs.alt;
-      expandImg.parentElement.style.display = "block";
-    }
-    </script>
-    <section style="border-bottom: 1px solid white;"></section>
+    <section style="border-bottom: 1px solid rgb(0, 0, 0);"></section>
+  <!-----Fashion Page------->
+  <h1 style="position: absolute;">Fashion</h1>
+    <section class="m-row" style="margin-top: 20px;">
+    <article class="m-third">
+      <img src="img/fash.jpg" alt="style1" style="width:100%">
+      <p>Chicago</p>
+      <p>Streetwear</p>
+      <section class="w3-container w3-center w3-content" style="max-width: 600px;">
+        <h2 class="w3-wide">The Fashion side</h2>
+        <p class="w3-opacity"><i>We love dressing up</i></p>
+        <p class="w3-justify">From the ashes of the Chicago Fire of 1871 came the birth of the city's fashion scene as entrepreneurs built new storefronts virtually overnight. Aided by the Windy City's incredible network of railroads, these fledgling enterprises in turn created millionaires who wanted to wear the latest clothes from Europe. Marshall Fields and Potter Palmer were among the local elites who regularly boarded ships to France and returned with exquisite suits, coats, hats, gowns, fabrics, and other accessories, which designers sought to re-create with cheaper fabrics and labor. Chicago's reputation as a trendsetting metropolis was only sealed 
+          by the city's film industry. Charlie Chaplin and his cast of stylish starlets had women north and south of Madison Street copying every hairdo and dress. Even after moviemaking moved to Los Angeles, actors and actresses traveling to New York City regularly dropped in when they switched trains downtown. By World War II, Chicago, the "City of Big Shoulders," became the place to start a career as a fashion designer.</p>
+      </section>
+    </article>
+  </section>
   <section class="m-row">
     <article class="m-third">
-      <img src="img/musicicon/ye.png" alt="yeezy" style="width:100%">
-      <p>Ye</p>
-      <p>Kanye.</p>
+      <img src="img/fashi.png" alt="yeezy" style="width:100%">
+      <p>Chicago</p>
+      <p>Streetwear</p>
+      <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">The Fashion side</h2>
+        <p class="w3-opacity"><i>We love dressing up</i></p>
+        <p class="w3-justify">With stunning, towering buildings, Chicago is well ahead of the pack especially when it comes to winter fashion trends.
+          Being one of the top cities in the US to visit, this city gives you a particular style setting especially when it comes to fashion.
+          Whether you prefer the “woke up like this” look or an industrial-chic swag, Chicago has something interesting to offer you.
+          It’s of the most fashionable cities in the US that most fashion-conscious individuals can visit. It’s also home to the SAIC Fashion Show, and Midwest Fashion Week.</p>
+      </section>
+    </article>
+  </section>
+  <section style="border-bottom: 1px solid rgb(0, 0, 0);"></section>
+    <!-----Attractions Page------->
+    <h1 style="position: absolute;">ATTRACTIONS</h1>
+    <section class="m-row"style="margin-top: 20px;">
+    <article class="m-third">
+      <img src="img/p133ye.png" alt="style1" style="width:33%">
+      <img src="img/park.jpg" alt="style1" style="width:33%">
+      <img src="img/millennium-park-511.jpg" alt="style1" style="width:33%">
+      <p>Chicago</p>
+      <p>Millenium Park</p>
+      <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">THE Hip-Hop cats</h2>
+        <p class="w3-opacity"><i>We love music</i></p>
+        <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </section>
+    </article>
+  </section>
+  <!-----Attractions Page------->
+  <section class="m-row" style="margin-top: 20px;">
+    <article class="m-third">
+      <img src="img/chinatown-chicago-511.jpg" alt="style1" style="width:100%">
+      <p>Chicago</p>
+      <p>Chinatown</p>
       <section class="w3-container w3-center w3-content" style="max-width:600px">
         <h2 class="w3-wide">THE Hip-Hop cats</h2>
         <p class="w3-opacity"><i>We love music</i></p>
@@ -86,9 +173,9 @@
   </section>
   <section class="m-row">
     <article class="m-third">
-      <img src="img/musicicon/ye.png" alt="yeezy" style="width:100%">
-      <p>Ye</p>
-      <p>Kanye.</p>
+      <img src="img/sci.jpg" alt="style1" style="width:100%">
+      <p>Chicago</p>
+      <p>museums</p>
       <section class="w3-container w3-center w3-content" style="max-width:600px">
         <h2 class="w3-wide">THE Hip-Hop cats</h2>
         <p class="w3-opacity"><i>We love music</i></p>
@@ -96,29 +183,41 @@
       </section>
     </article>
   </section>
-  <section style="border-bottom: 1px solid white;"></section>
-      
-    <!---- eats --->
+  <section class="m-row">
+    <article class="m-third">
+      <img src="img/Wringley-field.jpg" alt="yeezy" style="width:100%">
+      <p>Chicago</p>
+      <p>Wringleyfield</p>
+      <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">THE Hip-Hop cats</h2>
+        <p class="w3-opacity"><i>We love music</i></p>
+        <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </section>
+    </article>
+  </section>
+  <section style="border-bottom: 1px solid rgb(0, 0, 0);"></section>
+    <!---- Food --->
     <div id="food" class="EATS">
         <div class="eatslink">
-            <h2>Food in Chicago</h2>
+            <h2>Famous food in Chicago</h2>
             <p>We knew that the food would be good, but we were still blown away by the food quality at all price points.</br>
                 We’ve already written about some of our excellent restaurant meals, but we also loved accessible local food like Chi dogs, 
                 popcorn and donuts.</br>Even the local outpost of Eataly has its own twist, not to mention an enviable selection of fresh produce. Seriously, eating is one of the best things to do in Chicago. It is one of the best food cities in America after all.</p>
             <img src="img/coffe.jpg">
-            <p>for generous, well-constructed pour overs and friendly service. Why mess with perfection?</p>
-            <img src="">
+            <p>Experiencing genuine stuffed deep-dish pizza alone is reason enough to visit Chicago, but there is plenty of great food on offer. Alongside many great restaurants and bars, other local specialties include dripping Italian beef sandwiches loaded with sweet peppers and giardiniera, Chicago-style hot dogs, and popcorn, with the city’s favorite a mix of caramel and cheese corn. Just don’t call it Chicago mix—a company in St. Paul, Minnesota copyrighted that combination.</p>
+            <img src="img/13974208189_ad44a58c61_k_002.png">
             <img src="">
             <img src="">
         </div>
         <P><a href="#Top">Back to top</a></P>
     </div>
 </section>
+  <section style="border-bottom: 1px solid rgb(0, 0, 0);"></section>
 <footer>
     <ul>
-    <p><li><a href="www.facebook.com/mckruga"><img src="img/fb.svg" width="50px"></a>
-        <a href="www.instagram.com/mckruga"><img src="img/insta.svg" width="50px"></a>
-        <a href="www.twitter.com/mckruga"><img src="img/twitter.svg" width="50px"></a></li>subscribe for more updates on Chicago, USA. <br>
+    <p><li><a href="www.facebook.com/mckruga"><img src="img/fb.svg"alt="fb:link" width="50px"></a>
+        <a href="www.instagram.com/mckruga"><img src="img/insta.svg"alt="ig:link" width="50px"></a>
+        <a href="www.twitter.com/mckruga"><img src="img/twitter.svg"alt="twitter:link" width="50px"></a></li>subscribe for more updates on Chicago, USA. <br>
     ©2021 Chicago City, Rights reserved by Kelvin Mujeye</p>
   </ul>
    </footer>
