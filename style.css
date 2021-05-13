@@ -3,32 +3,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 nav{
     background: #2e3e50;
-    height: 80px;
+    height: 50px;
     width: 100%;
 }
 nav img{
-    width: 50px;
+    width: 30px;
     position: absolute;
-    top: 18%;
+    top: 1%;
     left: 3%;
+}
+.row .class2 h1{
+    margin-left: 15px;
+    width: fit-content;
+    padding: 0;
+
 }
 nav ul{
     float: right;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 nav ul li{
     display: inline-block;
-    margin:0 15px;
-    line-height: 80px;
+    margin:0 8px;
+    line-height: 35px;
 }
 nav ul li a{
     position: relative;
     color: white;
     font-size: 18px;
-    padding: 5px 0;
+    padding: 4px 0;
     text-transform: uppercase;
 }
 nav ul li a:before{
@@ -47,27 +54,16 @@ nav ul li a:hover:before{
     transform: scaleX(1);
     transform-origin: left;
 }
-.foots{
-    position: absolute;
-}
-.foots ul li{
-    display: flex;
-    flex: 2;
-}
 p{
-    font-size:24px;
+    font-size:18px;
+    margin-left: 20px;
+    text-align: justify;
+    width: 60%;
 }
 
 a{
     text-decoration: none;
     color: black;
-}
-.container
-{
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 18px;
 }
 .row
 {
@@ -82,8 +78,9 @@ a{
     font-size: 1rem;
 }
 .class2 img{
-    max-width: 100%;
-    padding: 50px 0;
+    max-width: 90%;
+    padding: 5px, 0;
+    margin-left:5%;
 }
 
 .class2 h1{
@@ -96,51 +93,30 @@ a{
     display: inline-block;
     background-color: teal;
     color: rgb(0, 0, 0);
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
+    padding: 20px auto;
+    margin-top:25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    border-radius: 25px;
     background: transparent;
     border: 1px solid teal;
+    
 }
 .btn:hover
 {
-    background: red;
-    color: white;
+    background: crimson;
+    color: rgb(255, 255, 255);
 }
-.header
-{
-    background: radial-gradient(#c5c9ca, #c5c9ca);
-}
-.header .row
-{
-    margin-top: 20px;
-}
-.features
-{
-    margin: 70px, 0;
-}
-.ft3
-{
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
-}
-.ft3
-{
-    width: 100%;
-}
-.smallsize
-{
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
+
 footer{
     width:100%;
-    height:fit-content;
-    background-color: rgb(248, 218, 218);
+    position: relative;
+    background-color: #2e3e50;
     text-align: center;
+    left: 0;
+    height: fit-content;
+    padding-top: 12px;
+    bottom:0;
   }
 @media screen and (max-width: 1024px){
     .body{
@@ -153,36 +129,58 @@ footer{
         font-size: 36px;
         line-height: inherit;
     }
-    .container p{
+    nav ul li a 
+    {
+        text-align: center;
+        line-height: 45px;
+    }
+    p{
         font-size: 30px;
+        width: 85%;
     }
     .class2 img{
         width: 394px;
     }
-    .navbar
-    {
-        font-size:inherit;
-        margin: 0 4;
-        padding-top: 15px;
-        padding-bottom: 5px;
-    }
     .btn{
         font-size: 24px;
+    }
+    .footer
+    {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 75px;
+    }
+    .footer img
+    {
+        width: 25px;
     }
 }
 @media screen and (max-width: 768px){
     html{
         background-color: #c5c9ca;
     }
-    .class2 img{
-        width: 394px;
+    p{
+        font-size: 18px;
     }
-    .navbar
+    .row h1{
+        font-size: 24px;
+        line-height: 23px;
+    }
+    nav
     {
         font-size:18px;
         margin: 0 4;
         padding-top: 11px;
         padding-bottom: 5px;
+    }
+    .footer
+    {
+        position:fixed;
+        width: 100%;
+        left: 0;
+        bottom:0;
     }
     
 }
@@ -192,11 +190,11 @@ footer{
     }
     .container h1{
         font-size: 20px;
-        line-height: inherit;
+        padding-top: 25px;
     }
     .container p{
         font-size: 16px;
-        margin-bottom: 1px;
+        margin-bottom: 10px;
     }
     .class2 img{
         width: 394px;
@@ -205,150 +203,119 @@ footer{
         padding-top: 0;
         margin-top: 0;
     }
-    .class2 h1{
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }
-    .logo img{
-        width: 60px;
-    }
-    .navbar
-    {
-        font-size:14px;
-        margin: 0 4;
-        padding-top: 15px;
-        padding-bottom: 5px;
-    }
     .btn
     {
-        font-size: 11px;
+        font-size: 14px;
         margin-bottom: 0;
-        padding-bottom: 1;
-        margin-top: 01;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     .foots img{
         width: 30px;
     }
 }
-@media screen and (max-width: 411px){
-    html{
-        background-color: #c5c9ca;
-        margin-top: 0;
-    }
-    .container h1{
-        font-size: 20px;
-        line-height: inherit;
-    }
-    .container p{
-        font-size: 14px;
-    }
-    .container{
-        padding: 10px;
-    }
-    .class2 img{
-        width: 394px;
-    }
-    .navbar
+@media screen and (max-width: 414px)
+{
+    .body
     {
-        font-size:14px;
-        margin-left: 1px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        width: 100%;
     }
-    .btn
+    nav ul li 
     {
-        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        top: 0;
+    }
+    a{
+        font-size: 2px;
+        text-decoration: none;
+    }
+    nav img
+    {
+        visibility: visible;
     }
 }
-@media screen and (max-width: 360px)
+@media screen and (max-width: 411px)
 {
-    
+    .body
+    {
+        width: 100%;
+    }
+    body section nav ul li a
+    {
+        font-size: 11px;
+    }
+    nav ul li {
+        transform: translateY(-9px);
+    }
+    p{
+        font-size: 12px;
+    }
+    nav img
+    {
+        visibility: visible;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    nav ul li a {
+        font-size: 14px;
+        margin-right: 5px;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 360px){
     html{
         background-color: #c5c9ca;
     }
-    html{
-        width: 100%;
-        margin: 0;
-        padding: 0;
+    nav img{
+        visibility: visible;
+        top: 10px;
     }
-    .logo{
-        transform: translate(-40px);
+    nav ul li {
+        top: 0;
+        transform: translateY(-8px);
     }
-    .container h1{
-        font-size: 22px;
-        line-height: inherit;
-    }
-    .container p{
-        font-size: 14px;
-    }
-    .class2 img{
-        width: 394px;
-    }
-    .navbar
-    {
-        font-size:14px;
-        padding-top: 12px;
-        padding-right: 0;
-        margin-right: 0;
-        padding-bottom: 2px;
-    }
-    .navbar ul{
-        padding: 0;
-        display: flex;
-        flex:1;
-    }
-    .btn
+    nav ul li a
     {
         font-size: 10px;
-        margin-bottom: 0px;
     }
+    p{
+        font-size: 11px;
+    }
+    .row h1{
+        font-size: 15px;
+        line-height: 14px;
+    }
+
 }
 @media screen and (max-width: 320px){
 
-    html{
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100%;
         background-color: #c5c9ca;
     }
-    .container h1{
-        font-size: 20px;
-        line-height: inherit;
-    }
+
     .container p{
         font-size: 12px;
     }
-    h1{
-        transform: translateX(-20px);
-    }
-    .class2 img{
-        width: 310px;
-        margin-left: 0;
-        padding-right: 0px;
-        padding-left: 0px;
-        padding-top:10px ;
-        padding-bottom: 0px;
-        transform: translateX(-18px);
-        padding-left: 0px;
-    }
-    .btn
-    {
-        width: 134px;
-        height: 28px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 10px;
-        box-sizing: border-box;
-    }
+
     .class2 p
     {
         width: 30px;
-        margin-right:0px ;
-        padding-right: 0px;
+        margin-right:0;
+        padding-right: 0;
         width: 280px;
     }
-    .row{
-        width: 240px;
+    .footer
+    {
+        padding: 0;
     }
-
+    
 }
