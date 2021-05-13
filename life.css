@@ -4,6 +4,10 @@
     margin: 0px;
     text-decoration: none;
 }
+html
+{
+    background: rgba(102, 119, 103, 0.3);
+}
 html ,body
 {
     background-color: #eee;

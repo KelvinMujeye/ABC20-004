@@ -22,6 +22,8 @@ html, body
 }
 html{
     background-color: #eee;
+    background: rgba(102, 119, 103, 0.3);
+
 }
 p{
     width: 50%;
@@ -191,7 +193,7 @@ nav ul li a:hover:before{
     {
         width: 25px;
     }
-    article p
+    body article
     {
     text-decoration: none;
     font-size: 15px;
@@ -201,7 +203,10 @@ nav ul li a:hover:before{
     height: auto;
     text-align: center;
     }
-
+    .images
+    {
+        padding-bottom: 5px;
+    }
 }
 @media screen and (max-width:320px)
 {

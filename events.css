@@ -3,6 +3,10 @@
     padding: 0;
     text-decoration: none;
 }
+html
+{
+    background: rgba(102, 119, 103, 0.3);
+}
 html, body{
     margin: 0;
     padding: 0;
