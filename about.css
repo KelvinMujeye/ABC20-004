@@ -4,65 +4,57 @@
     padding: 0;
     height: auto;
     text-decoration: none;
+    list-style: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body
+{
+    width: 100%;
+}
+.images 
+{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+    padding-bottom: 15px;
 }
 html{
     background-color: #eee;
 }
-
-article
+p{
+    width: 50%;
+}
+article p
 {
     text-decoration: none;
     font-size: 15px;
-    width: 100%;
-    margin-left: 10px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     text-align: justify;
-    text-align: left;
-    
 }
-article h1{
+body article h1{
     font-size: 35px;
     color: rgb(0, 0, 0);
+    text-align: center;
     text-decoration: none;
-}
-article p{
-    color:rgb(0, 0, 0);
-    line-height: 2em;
-    font-weight: 400;
-    margin: 0;
-
-}
-.hearder
-{
-    width: 100%;
-    height: 5em;
-}
-.attractions  p
-{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-}
-.the_text p
-{
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-}
-h3{
-    color:rgb(0, 0, 0)
 }
 nav{
     background: #2e3e50;
-    height: 80px;
+    height: 60px;
 }
 nav img{
-    width: 50px;
+    width: 40px;
     position: absolute;
     top: 2%;
     left: 3%;
 }
 nav ul{
     float: right;
+    height: 40px;
     margin-right: 25px;
 }
 nav ul li{
@@ -73,7 +65,7 @@ nav ul li{
 nav ul li a{
     position: relative;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     padding: 5px 0;
     text-transform: uppercase;
 }
@@ -93,11 +85,56 @@ nav ul li a:hover:before{
     transform: scaleX(1);
     transform-origin: left;
 }
-footer{
+.footer{
     width:100%;
+    position: absolute;
     height:fit-content;
-    background-color: rgb(248, 218, 218);
+    background-color: #2e3e50;
     text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+  }
+  @media (max-width:1024px)
+  {
+      html, body
+      {
+          width: 100%;
+          text-align: justify;
+      }
+      nav img
+      {
+          width: 40px;
+          top: 12px;
+      }
+      body article
+      {
+        text-decoration: none;
+        font-size: 15px;
+        width: 80%;
+        margin-left: 100px;
+        margin-right: 100px;
+        height: auto;
+        text-align: justify;
+        padding-bottom: 15px;
+      }
+      .footer{
+          position: fixed;
+          width: 100%;
+          margin: 0;
+          left: 0;
+          bottom: 0;
+          padding: 0;
+      }
+  }
+  @media (max-width:768px)
+  {
+      body{
+          width: 100%;
+      }
+      nav ul li a 
+      {
+          font-size: 15px;
+      }
   }
 @media screen and (max-width:411px)
 {
@@ -109,6 +146,13 @@ footer{
     {
         display: flex;
         transform: translate(50px);
+    }
+    body article
+    {
+        text-align: justify;
+        margin: 0;
+        width: ;
+        text-align: left;
     }
 }
 @media screen and (max-width:360px)
