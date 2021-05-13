@@ -116,6 +116,7 @@ footer{
     height:fit-content;
     background-color:#2e3e50;
     text-align: center;
+    color: white;
   }
 @media (max-width:1024px)
 {
