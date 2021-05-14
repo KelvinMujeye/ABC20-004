@@ -122,18 +122,6 @@ footer{
     text-align: center;
     color: white;
   }
-@media (max-width:1024px)
-{
-    section .container
-    {
-        width: 95%;
-    }
-    body
-    {
-        height: 100vh;
-    }
-
-}
 @media (max-width:768px)
 {
     section .container
@@ -142,9 +130,10 @@ footer{
     }
     body section .container
     {
-        height: 85vh;
+        height: 88vh;
         width: 100%;
     }
+    
 
 }
 @media (max-width:600px)
@@ -191,9 +180,14 @@ footer{
     {
         font-size: 12px;
     }
+    nav ul 
+    {
+        margin: 0;
+    }
     nav ul li
     {
-        margin: 4px;
+        margin: 1px;
+
     }
     section .container .forms h2
     {
@@ -220,22 +214,30 @@ footer{
     section .container
     {
         width: 95%;
+        height: 89vh;
     }
     body
     {
         height: 100vh;
+    }
+    body .footer footer
+    {
+        position: fixed;
+        left: 0;
+        bottom: 0;
     }
 
 }
-@media (max-width:1024px)
+@media (max-width:360px)
 {
-    section .container
+    section .container, section.container .forms
     {
         width: 95%;
+        line-height: 20px;
     }
     body
     {
-        height: 100vh;
+        height: 118vh;
     }
 
 }

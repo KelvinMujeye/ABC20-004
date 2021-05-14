@@ -85,7 +85,16 @@ footer{
     text-align: center;
     color: white;
   }
-
+  
+@media(max-width:1024px)
+{
+    body .footer footer
+    {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+}
 @media screen and (max-width:768px)
 {
     html{
@@ -106,6 +115,12 @@ footer{
     }
     .navbar .events ul li{
         width: 550px;
+    }
+    body .footer footer
+    {
+        position: fixed;
+        left: 0;
+        bottom: 0;
     }
     
 }
@@ -157,11 +172,11 @@ footer{
         width: 300px;
     }
 }
-@media (max-width:414px)
+@media (max-width:360px)
 {
     nav ul li a
     {
-        font-size: 14px;
+        font-size: 12px;
     }
     nav ul li
     {
@@ -176,4 +191,110 @@ footer{
         width: 90%;
         padding-left: 5px;
     }
+    body .footer footer
+    {
+        position: relative;
+    }
 }
+@media (max-width:540px)
+{
+    html, body{
+        width: 100%;
+    }
+    body section nav ul 
+    {
+        margin: 0;
+        padding: 0;
+    }
+    body div img
+    {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-self: center;
+        padding-bottom: 25px;
+    }
+    body div h2
+    {
+        width: fit-content;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body div p
+    {
+        width: 95%;
+        text-align: justify;
+        margin-left: 8px;
+    }
+    body section nav ul li
+    {
+        padding: 2px;
+        margin: 2px;
+    }
+    body section nav ul li a
+    {
+        font-size: 12px;
+    }
+    body section nav img 
+    {
+        margin-top: 5px;
+        width: 35px;
+    }
+    body section.m-row article.m-third p
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    section.container-ye h2.w3-wide,
+    section.container-juicy h2.w3-wide,
+    section.container-von h2.w3-wide,
+    section.container-att h2.w3-wide,
+    section.container-chi h2.w3-wide,
+    section.m-row article.m-third section.w3-w3
+    section.container-cen h2.w3-wide,
+    section.container-cent h2.w3-wide,
+    section.w3-w3-w3 h2.w3-wide,
+    section.w3-w3 h2.w3-wide
+    {
+        text-align: center;
+    }
+    body section.m-row article.m-third 
+    section.container-ye,
+    body section.m-row article.m-third 
+    section.w3-w3,
+    body section.m-row article.m-third 
+    section.w3-w3-w3
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-att,
+    body section.m-row article.m-third 
+    section.container-cen
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-juicy,
+    body section.m-row article.m-third 
+    section.container-cent
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-von,
+    body section.m-row article.m-third 
+    section.container-chi
+    {
+        display: block;
+    }
+    body .footer footer ul li a img
+    {
+        width: 35px;
+        padding:0 ;
+        margin: 0;
+    }
+
+  }

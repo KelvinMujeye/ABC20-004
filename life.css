@@ -155,6 +155,10 @@ article p{
     html, body{
         width: 100%;
     }
+    nav img 
+    {
+        transform: translateY(-33px);
+    }
     .banner .content section .slide
     {
         visibility: collapse;
@@ -187,20 +191,42 @@ article p{
     {
         margin-left: 25px;
     }
+    body section.m-row article.m-third section.container-att,
+    body section.m-row article.m-third section.container-chi,
+    body section.m-row article.m-third section.container-cen,
+    body section.m-row article.m-third section.container-cent,
+    body section.m-row article.m-third section.w3-w3,
+    body section.m-row article.m-third section.w3-w3-w3
+    {
+        max-width: 900px!important;
+    }
   }
   @media screen and (max-width:768px)
   {
     html, body{
         width: 100%;
     }
-    .banner .content section .slide
+    body section nav ul li
     {
-        visibility: collapse;
+        padding: 2px;
+        margin: 2px;
     }
-section.w3-container.w3-center.w3-content,.m-third, img{
-        width: 95%;
-        margin-top: 25px;
+    body section nav ul li a
+    {
+        font-size: 18px;
     }
+    body section nav img 
+    {
+        width: 45px;
+    }
+    body .footer footer ul li a img
+    {
+        width: 35px;
+        padding:2px ;
+        margin: 0;
+        display: flex;
+    }
+
   }
   @media screen and (max-width:600px)
   {
@@ -225,9 +251,16 @@ section.w3-container.w3-center.w3-content,.m-third, img{
         margin-left: 10px;
         font-size: 22px;
     }
+    body .footer footer ul li a img
+    {
+        width: 35px;
+        padding:2px ;
+        margin: 0;
+        display: flex;
+    }
 
   }
-  @media screen and (max-width:414px)
+  @media screen and (max-width:540px)/*540px done*/
   {
     html, body{
         width: 100%;
@@ -240,9 +273,10 @@ section.w3-container.w3-center.w3-content,.m-third, img{
     body div img
     {
         margin-left: auto;
-        width: 50%;
         margin-right: auto;
-        align-items: center;
+        display: block;
+        align-self: center;
+        padding-bottom: 25px;
     }
     body div h2
     {
@@ -271,47 +305,169 @@ section.w3-container.w3-center.w3-content,.m-third, img{
         margin-top: 5px;
         width: 35px;
     }
-    body section.m-row article.m-thrid section.w3-container.w3-center.w3-content
+    body section.m-row article.m-third p
     {
-        text-transform: capitalize;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
+    }
+    section.container-ye h2.w3-wide,
+    section.container-juicy h2.w3-wide,
+    section.container-von h2.w3-wide,
+    section.container-att h2.w3-wide,
+    section.container-chi h2.w3-wide,
+    section.m-row article.m-third section.w3-w3
+    section.container-cen h2.w3-wide,
+    section.container-cent h2.w3-wide,
+    section.w3-w3-w3 h2.w3-wide,
+    section.w3-w3 h2.w3-wide
+    {
+        text-align: center;
+    }
+    body section.m-row article.m-third 
+    section.container-ye,
+    body section.m-row article.m-third 
+    section.w3-w3,
+    body section.m-row article.m-third 
+    section.w3-w3-w3
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-att,
+    body section.m-row article.m-third 
+    section.container-cen
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-juicy,
+    body section.m-row article.m-third 
+    section.container-cent
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-von,
+    body section.m-row article.m-third 
+    section.container-chi
+    {
+        display: block;
+    }
+    body .footer footer ul li a img
+    {
+        width: 35px;
+        padding:2px ;
+        margin: 0;
+        display: flex;
     }
 
   }
-  @media screen and (max-width:411px)
+  @media screen and (max-width:414px)/*414px done*/
   {
     html, body{
         width: 100%;
     }
-    .banner .content section .slide
+    body section nav ul 
     {
-        visibility: collapse;
-    }
-section.w3-container.w3-center.w3-content,.m-third, img{
-        width: 100%;
-        margin-top: 25px;
-    }
-    .banner .nav ul li
-    {
-        padding: 0;
-        font-size: 0.8rem;
         margin: 0;
+        padding: 0;
     }
-    .banner p{
-        width: 90%;
-        margin-left: 10px;
-        height: 70%;
-        overflow: scroll;
-    }
-    h1{
-        padding: 5;
-    }
-    .banner h2
+    body div img
     {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-self: center;
+        padding-bottom: 25px;
     }
+    body div h2
+    {
+        width: fit-content;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body div p
+    {
+        width: 95%;
+        text-align: justify;
+        margin-left: 8px;
+    }
+    body section nav ul li
+    {
+        padding: 2px;
+        margin: 2px;
+    }
+    body section nav ul li a
+    {
+        font-size: 12px;
+    }
+    body section nav img 
+    {
+        margin-top: 5px;
+        width: 35px;
+    }
+    body section.m-row article.m-third p
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    section.container-ye h2.w3-wide,
+    section.container-juicy h2.w3-wide,
+    section.container-von h2.w3-wide,
+    section.container-att h2.w3-wide,
+    section.container-chi h2.w3-wide,
+    section.m-row article.m-third section.w3-w3
+    section.container-cen h2.w3-wide,
+    section.container-cent h2.w3-wide,
+    section.w3-w3-w3 h2.w3-wide,
+    section.w3-w3 h2.w3-wide
+    {
+        text-align: center;
+    }
+    body section.m-row article.m-third 
+    section.container-ye,
+    body section.m-row article.m-third 
+    section.w3-w3,
+    body section.m-row article.m-third 
+    section.w3-w3-w3
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-att,
+    body section.m-row article.m-third 
+    section.container-cen
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-juicy,
+    body section.m-row article.m-third 
+    section.container-cent
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-von,
+    body section.m-row article.m-third 
+    section.container-chi
+    {
+        display: block;
+    }
+    body .footer footer ul li a img
+    {
+        width: 35px;
+        padding:2px ;
+        margin: 0;
+        display: flex;
+    }
+
   }
+
+
   @media screen and (max-width:320px)
   {
     html, body{
@@ -341,8 +497,15 @@ section.w3-container.w3-center.w3-content,.m-third, img{
     {
         width: 1%;
     }
+    body .footer footer ul li a img
+    {
+        width: 35px;
+        padding:2px ;
+        margin: 0;
+        display: flex;
+    }
   }
-  @media screen and (max-width:600px)
+  @media screen and (max-width:360px)
   {
     html, body{
         width: 100%;
@@ -355,39 +518,136 @@ section.w3-container.w3-center.w3-content,.m-third, img{
         width: 95%;
         margin-top: 25px;
     }
+    section.w3-container.w3-center.w3-content .w3-wide
+    {
+        background-color: teal;
+        margin: 0;
+        padding: 0;
+        width: 80px;
+        font-size: 10px;
+    }
+    section.w3-container.w3-center.w3-content .w3-justify
+    {
+        font-size: 12px;
+    }
+    section.w3-container.w3-center.w3-content .w3-opacity
+    {
+        width: 1%;
+    }
+    body .footer footer ul li a img
+    {
+        width: 35px;
+        padding:2px ;
+        margin: 0;
+        display: flex;
+    }
+    body section nav img 
+    {
+        transform: translateY(2px);
+    }
   }
-  @media screen and (max-width:600px)
+  @media screen and (max-width:414px)/*414px done*/
   {
     html, body{
         width: 100%;
     }
-    .banner .content section .slide
+    body section nav ul 
     {
-        visibility: collapse;
+        margin: 0;
+        padding: 0;
     }
-section.w3-container.w3-center.w3-content,.m-third, img{
+    body div img
+    {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-self: center;
+        padding-bottom: 25px;
+    }
+    body div h2
+    {
+        width: fit-content;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body div p
+    {
         width: 95%;
-        margin-top: 25px;
+        text-align: justify;
+        margin-left: 8px;
     }
+    body section nav ul li
+    {
+        padding: 1px;
+        margin: 1px;
+    }
+    body section nav ul li a
+    {
+        font-size: 9px;
+    }
+    body section nav img 
+    {
+        margin-top: 5px;
+        width: 35px;
+    }
+    body section.m-row article.m-third p
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    section.container-ye h2.w3-wide,
+    section.container-juicy h2.w3-wide,
+    section.container-von h2.w3-wide,
+    section.container-att h2.w3-wide,
+    section.container-chi h2.w3-wide,
+    section.m-row article.m-third section.w3-w3
+    section.container-cen h2.w3-wide,
+    section.container-cent h2.w3-wide,
+    section.w3-w3-w3 h2.w3-wide,
+    section.w3-w3 h2.w3-wide
+    {
+        text-align: center;
+    }
+    body section.m-row article.m-third 
+    section.container-ye,
+    body section.m-row article.m-third 
+    section.w3-w3,
+    body section.m-row article.m-third 
+    section.w3-w3-w3
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-att,
+    body section.m-row article.m-third 
+    section.container-cen
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-juicy,
+    body section.m-row article.m-third 
+    section.container-cent
+    {
+        display: block;
+    }
+    body section.m-row article.m-third 
+    section.container-von,
+    body section.m-row article.m-third 
+    section.container-chi
+    {
+        display: block;
+    }
+    body .footer footer ul li a img
+    {
+        width: 35px;
+        padding:2px ;
+        margin: 0;
+        display: flex;
+    }
+
   }
-  @media screen and (max-width:600px)
-  {
-      .container, section,.nav ,.content
-      {
-          margin: 0;
-          width: 100%;
-      }
-      .slide
-      {
-          visibility: collapse;
-      }
-      section.w3-container.w3-center.w3-content,.m-third, p
-      {
-        background-color: white;
-        border: unset;
-      }
-      .w3-opacity
-      {
-          visibility: collapse;
-      }
-}
+
+
