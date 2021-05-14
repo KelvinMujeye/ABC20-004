@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body 
+{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/img/Chicagobull.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    background: #2e3e50;
+    height: 60px;
+}
+nav img{
+    width: 40px;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+}
+nav ul{
+    float: right;
+    height: 40px;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    margin:0 15px;
+    line-height: 80px;
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 14px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background:crimson ;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.4s linear;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.content 
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+button
+{
+    color: #fff;
+    margin-top: 55px;
+    background: transparent;
+    border-radius: 35px;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+button:hover
+{
+    border: none;
+    background-color: tomato;
+}
+
+
+footer{
+    width:100%;
+    position: fixed;
+    background-color: #2e3e50;
+    text-align: center;
+    left: 0;
+    height: fit-content;
+    padding-top: 12px;
+    bottom:0;
+    color: white;
+  }

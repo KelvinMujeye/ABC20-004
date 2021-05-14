@@ -6,28 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Mckruga, BACBW, 2021, studentwebsite,city website" />
     <link rel="icon" href="favicon.svg?">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="thank.css">
     <title>Chicago | Thank you</title>
 </head>
 <body>
-<div class="header">
-<div class="container">
-<div class="navbar">
-<div class="logo">
-  <img src="img/Untitled-1@2x.png" alt="logo_pic">
-</div>
-<nav>
-<ul>
-  <li><a href="/index.html"><p>Homepage</p></a></li>                           
-</ul>
-</nav>       
-</div>
-</div>
-</div>
-<section >
-  <img style="width: 40%;"src="img/chicago-skyline-1.jpg" alt="sky_line">
-  <p>Thank you for your love and support</p>
+  <section>
+    <nav>
+      <img src="/img/Untitled-1@2x.png" alt="logo">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Connect.html">Connect</a></li>
+            <li><a href="index.html">Homepage</a></li>
+          </ul>
+        </nav>
 </section>
+<div class="content">
+  <h1>Thank you</h1>
+  <h3>For visiting Chicago</h3>
+  <p>Please do share your experience with other, maybe our next visitor is viewing your timeline.</p>
+  <button class="btn" onclick="window.close()">Acknowledged</button>
+</div>
+<script lang="javascript">
+  function quitWindow(cmd){
+    if(window.open("index.html"))
+    {
+      open(location, '_self').close();
+    }
+    return false;
+  }
+</script>
 <div class="footer">
   <footer>
      <ul>
