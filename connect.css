@@ -87,7 +87,6 @@ section .container .forms
 }
 .formboxsub :hover
 {
-     background-color: teal;
      color:  white;
      border: 1px solid teal;
      font-size: 16px;
