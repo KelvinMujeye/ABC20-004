@@ -97,14 +97,12 @@ nav ul li a:hover:before{
     border: 2px solid tomato;
     border-radius: 25px;
     margin: 0px 0px;
-    background: tomato;
     color:rgb(0, 0, 0);
     font-weight: 400;
 }
 .banner .nav ul li a p:hover
 {
     background: teal;
-    border: 2px solid teal;
 }
 section
 {
