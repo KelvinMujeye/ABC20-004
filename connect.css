@@ -137,8 +137,6 @@ footer{
         height: 88vh;
         width: 100%;
     }
-    
-
 }
 @media (max-width:600px)
 {
@@ -234,14 +232,19 @@ footer{
 }
 @media (max-width:360px)
 {
-    section .container, section.container .forms
+    section .container
     {
         width: 95%;
         line-height: 20px;
     }
+    section .container .forms
+    {
+        height: 110vh;
+        margin-bottom: 20px;
+    }
     body
     {
-        height: 118vh;
+        height: 100%;
     }
 
 }
