@@ -174,15 +174,44 @@ footer{
     }
 
 }
-@media (max-width:1024px)
+@media (max-width:414px)
 {
-    section .container
-    {
-        width: 95%;
-    }
-    body
+    body, html
     {
         height: 100vh;
+    }
+    section .container .forms
+    {
+        height: 78vh;
+        line-height: auto;
+        width: 95%;
+        margin-top: 5px;
+    }
+    nav ul li a
+    {
+        font-size: 12px;
+    }
+    nav ul li
+    {
+        margin: 4px;
+    }
+    section .container .forms h2
+    {
+        margin: 0;
+        padding: 0;
+    }
+    section .container .forms .formbox span
+    {
+        margin-right: 10px;
+    }
+    section .container .forms .formbox p
+    {
+        margin-right: 5px;
+        width: 70px;
+    }
+    section .container .forms .formboxsub
+    {
+        transform: translateY(-30px);
     }
 
 }

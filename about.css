@@ -122,10 +122,8 @@ nav ul li a:hover:before{
       .footer{
           position: fixed;
           width: 100%;
-          margin: 0;
           left: 0;
           bottom: 0;
-          padding: 0;
       }
   }
   @media (max-width:768px)
@@ -156,21 +154,34 @@ nav ul li a:hover:before{
   @media screen and (max-width:414px)
 {
     html{
-        margin: 0;
-        padding: 0;
-    }
-
+    margin: 0;
+    padding: 0;
+}
+body section nav ul li  
+{
+    padding: 3px;
+    margin: 0;
+}
+body article
+{
+text-decoration: none;
+font-size: 15px;
+width: 95%;
+margin-left: auto;
+margin-right: auto;
+height: auto;
+text-align: justify;
+}
+body article h1
+{
+    font-size: 22px;
+}
 }
 @media screen and (max-width:411px)
 {
     html{
         margin: 0;
         padding: 0;
-    }
-    .navbar ul
-    {
-        display: flex;
-        transform: translate(50px);
     }
     body article
     {

@@ -225,11 +225,15 @@ footer{
     {
         width: 100%;
     }
-    nav ul li 
+    body nav ul li a
+    {
+        font-size: 16px;
+        text-transform:capitalize;
+    }
+    body nav ul li
     {
         margin: 0;
         padding: 0;
-        top: 0;
     }
     a{
         font-size: 2px;
@@ -237,7 +241,17 @@ footer{
     }
     nav img
     {
-        visibility: visible;
+        padding-top: 5px;
+    }
+    body .row .class2 p 
+    {
+        font-weight: none;
+        font-size: 16px;
+    }
+    body .footer footer ul 
+    {
+        font-size: auto;
+        text-transform: capitalize;
     }
 }
 @media screen and (max-width: 411px)
