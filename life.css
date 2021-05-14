@@ -227,6 +227,57 @@ section.w3-container.w3-center.w3-content,.m-third, img{
     }
 
   }
+  @media screen and (max-width:414px)
+  {
+    html, body{
+        width: 100%;
+    }
+    body section nav ul 
+    {
+        margin: 0;
+        padding: 0;
+    }
+    body div img
+    {
+        margin-left: auto;
+        width: 50%;
+        margin-right: auto;
+        align-items: center;
+    }
+    body div h2
+    {
+        width: fit-content;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body div p
+    {
+        width: 95%;
+        text-align: justify;
+        margin-left: 8px;
+    }
+    body section nav ul li
+    {
+        padding: 2px;
+        margin: 2px;
+    }
+    body section nav ul li a
+    {
+        font-size: 12px;
+    }
+    body section nav img 
+    {
+        margin-top: 5px;
+        width: 35px;
+    }
+    body section.m-row article.m-thrid section.w3-container.w3-center.w3-content
+    {
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+  }
   @media screen and (max-width:411px)
   {
     html, body{
