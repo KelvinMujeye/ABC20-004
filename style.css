@@ -100,13 +100,12 @@ a{
     background-color: teal;
     color: rgb(0, 0, 0);
     padding: 20px;
-    margin-top:25px;
-    margin-bottom: 25px;
-    margin-left: 25px;
+    width: auto;
+    height: 0.4em;
+    margin:25px;
     border-radius: 25px;
     background: transparent;
     border: 1px solid teal;
-    
 }
 .btn:hover
 {
@@ -125,6 +124,13 @@ footer{
     bottom:0;
     color: white;
   }
+  footer p
+  {
+      font-size: 1em;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+  }
 @media screen and (max-width: 1024px){
     .body{
         display:inline-block ;
@@ -133,7 +139,7 @@ footer{
         background-color: #c5c9ca;
     }
     .container h1{
-        font-size: 36px;
+        font-size: inherit;
         line-height: inherit;
     }
     nav ul li a 
@@ -142,14 +148,14 @@ footer{
         line-height: 45px;
     }
     p{
-        font-size: 30px;
+        font-size: inherit;
         width: 85%;
     }
     .class2 img{
         width: 394px;
     }
     .btn{
-        font-size: 24px;
+        font-size: 1em;
     }
     footer{
         width:100%;
@@ -172,7 +178,7 @@ footer{
         background-color: #c5c9ca;
     }
     p{
-        font-size: 18px;
+        font-size: inherit;
     }
     .row h1{
         font-size: 24px;
@@ -180,7 +186,7 @@ footer{
     }
     nav
     {
-        font-size:18px;
+        font-size:inherit;
         padding-top: 11px;
         padding-bottom: 5px;
     }
@@ -218,7 +224,7 @@ footer{
     }
     .btn
     {
-        font-size: 14px;
+        font-size: inherit;
         margin-bottom: 0;
         margin-bottom: 10px;
         margin-top: 10px;
