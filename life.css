@@ -38,7 +38,7 @@ nav{
 nav img{
     width: 50px;
     position: absolute;
-    top: 1%;
+    top: 2%;
     left: 3%;
 }
 nav ul{
@@ -272,19 +272,23 @@ article p{
     {
         visibility: collapse;
     }
+    body section nav ul li a
+    {
+        font-size: 12px;
+    }
 section.w3-container.w3-center.w3-content,.m-third, img{
         width: 95%;
         margin-top: 25px;
     }
     .banner h2{
-        font-size: 1.6rem;
+        font-size: inherit;
         color: rgb(0, 0, 0);
         margin: 15px;
         text-align: center;
     }
     .banner p{
         margin-left: 10px;
-        font-size: 22px;
+        font-size: inherit;
     }
     body .footer footer ul li a img
     {
@@ -294,6 +298,20 @@ section.w3-container.w3-center.w3-content,.m-third, img{
         display: flex;
     }
 
+  }
+  @media screen and (max-width:411px)
+  {
+    html, body{
+        width: 100%;
+    }
+    .banner p{
+        margin-left: 10px;
+        font-size: inherit;
+    }
+    body section nav ul li a
+    {
+        font-size: 1px;
+    }
   }
   @media screen and (max-width:540px)/*540px done*/
   {
@@ -337,7 +355,7 @@ section.w3-container.w3-center.w3-content,.m-third, img{
     }
     body section nav img 
     {
-        margin-top: 5px;
+        margin-top: 35px;
         width: 35px;
     }
     body section.m-row article.m-third p
@@ -398,111 +416,7 @@ section.w3-container.w3-center.w3-content,.m-third, img{
     }
 
   }
-  @media screen and (max-width:414px)/*414px done*/
-  {
-    html, body{
-        width: 100%;
-    }
-    body section nav ul 
-    {
-        margin: 0;
-        padding: 0;
-    }
-    body div img
-    {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        align-self: center;
-        padding-bottom: 25px;
-    }
-    body div h2
-    {
-        width: fit-content;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    body div p
-    {
-        width: 95%;
-        text-align: justify;
-        margin-left: 8px;
-    }
-    body section nav ul li
-    {
-        padding: 2px;
-        margin: 2px;
-    }
-    body section nav ul li a
-    {
-        font-size: 12px;
-    }
-    body section nav img 
-    {
-        margin-top: 5px;
-        width: 35px;
-    }
-    body section.m-row article.m-third p
-    {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    section.container-ye h2.w3-wide,
-    section.container-juicy h2.w3-wide,
-    section.container-von h2.w3-wide,
-    section.container-att h2.w3-wide,
-    section.container-chi h2.w3-wide,
-    section.m-row article.m-third section.w3-w3
-    section.container-cen h2.w3-wide,
-    section.container-cent h2.w3-wide,
-    section.w3-w3-w3 h2.w3-wide,
-    section.w3-w3 h2.w3-wide
-    {
-        text-align: center;
-    }
-    body section.m-row article.m-third 
-    section.container-ye,
-    body section.m-row article.m-third 
-    section.w3-w3,
-    body section.m-row article.m-third 
-    section.w3-w3-w3
-    {
-        display: block;
-    }
-    body section.m-row article.m-third 
-    section.container-att,
-    body section.m-row article.m-third 
-    section.container-cen
-    {
-        display: block;
-    }
-    body section.m-row article.m-third 
-    section.container-juicy,
-    body section.m-row article.m-third 
-    section.container-cent
-    {
-        display: block;
-    }
-    body section.m-row article.m-third 
-    section.container-von,
-    body section.m-row article.m-third 
-    section.container-chi
-    {
-        display: block;
-    }
-    body .footer footer ul li a img
-    {
-        width: 35px;
-        padding:2px ;
-        margin: 0;
-        display: flex;
-    }
-
-  }
-
-
+  
   @media screen and (max-width:320px)
   {
     html, body{
@@ -538,6 +452,10 @@ section.w3-container.w3-center.w3-content,.m-third, img{
         padding:2px ;
         margin: 0;
         display: flex;
+    }
+    body section nav ul li a
+    {
+        font-size: 8px;
     }
   }
   @media screen and (max-width:360px)
@@ -576,109 +494,6 @@ section.w3-container.w3-center.w3-content,.m-third, img{
         margin: 0;
         display: flex;
     }
-  }
-  @media screen and (max-width:414px)/*414px done*/
-  {
-    html, body{
-        width: 100%;
-    }
-    body section nav ul 
-    {
-        margin: 0;
-        padding: 0;
-    }
-    body div img
-    {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        align-self: center;
-        padding-bottom: 25px;
-    }
-    body div h2
-    {
-        width: fit-content;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    body div p
-    {
-        width: 95%;
-        text-align: justify;
-        margin-left: 8px;
-    }
-    body section nav ul li
-    {
-        padding: 1px;
-        margin: 1px;
-    }
-    body section nav ul li a
-    {
-        font-size: 9px;
-    }
-    body section nav img 
-    {
-        margin-top: 5px;
-        width: 35px;
-    }
-    body section.m-row article.m-third p
-    {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    section.container-ye h2.w3-wide,
-    section.container-juicy h2.w3-wide,
-    section.container-von h2.w3-wide,
-    section.container-att h2.w3-wide,
-    section.container-chi h2.w3-wide,
-    section.m-row article.m-third section.w3-w3
-    section.container-cen h2.w3-wide,
-    section.container-cent h2.w3-wide,
-    section.w3-w3-w3 h2.w3-wide,
-    section.w3-w3 h2.w3-wide
-    {
-        text-align: center;
-    }
-    body section.m-row article.m-third 
-    section.container-ye,
-    body section.m-row article.m-third 
-    section.w3-w3,
-    body section.m-row article.m-third 
-    section.w3-w3-w3
-    {
-        display: block;
-    }
-    body section.m-row article.m-third 
-    section.container-att,
-    body section.m-row article.m-third 
-    section.container-cen
-    {
-        display: block;
-    }
-    body section.m-row article.m-third 
-    section.container-juicy,
-    body section.m-row article.m-third 
-    section.container-cent
-    {
-        display: block;
-    }
-    body section.m-row article.m-third 
-    section.container-von,
-    body section.m-row article.m-third 
-    section.container-chi
-    {
-        display: block;
-    }
-    body .footer footer ul li a img
-    {
-        width: 35px;
-        padding:2px ;
-        margin: 0;
-        display: flex;
-    }
-
-  }
-
-
+  
+}
+  
